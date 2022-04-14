@@ -1,5 +1,6 @@
 import React from "react";
 import Thumb from "../Thumb";
+import PropTypes from "prop-types";
 
 //config
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../../config";
@@ -43,6 +44,10 @@ const MovieInfo = ({ movie }) => {
       </Content>
     </Wrapper>
   );
+};
+
+MovieInfo.propTypes = {
+  movie: PropTypes.object,
 };
 
 export default MovieInfo;
